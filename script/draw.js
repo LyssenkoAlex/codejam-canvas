@@ -5,8 +5,6 @@ var canvas = document.getElementById("canvasID");
 let cWidth = canvas.getBoundingClientRect().width;
 let cHeight = canvas.getBoundingClientRect().height;
 
-
-
 function drawImg(imageSrc) {
     if (canvas.getContext) {
       var ctx = canvas.getContext("2d");
@@ -38,9 +36,7 @@ function drawImg(imageSrc) {
     });
 
     return toReturn;
-
-
-  }
+}
   
 
   
@@ -58,7 +54,6 @@ function draw4x4() {
     
     drawPixs(data4x4, '#');
 
-  
 }
 
 function draw32x32() {
