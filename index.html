@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CodeJam - Canvas</title>
+    
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+  
+</head>
+
+    <body>
+        <nav>
+            <div>
+                   <img src="assets/svg/nav.svg" alt="Nav"/> 
+            </div>
+            <div>
+                    <span>CodeJam - Pallete</span>
+            </div>
+            <div>
+                    <img src="assets/svg/nav_2.svg" alt="Nav"/>
+            </div>
+        </nav>
+
+        <main>
+            <div>
+                <div class="color_tools">
+                    <div>
+                        <img src="assets/svg/bucket.svg" alt="Backet"/>    
+                        <span>Paint bucket</span>
+                    </div>
+                    <div>
+                            <img src="assets/svg/color_choose.svg" alt="Backet"/>    
+                            <span>Choose color</span>
+                    </div>
+                    <div>
+                            <img src="assets/svg/move.svg" alt="Backet"/>    
+                            <span>Move</span>
+                    </div>
+                    <div>
+                            <img src="assets/svg/transform.svg" alt="Backet"/>    
+                            <span>Transform</span>
+                    </div>
+
+
+                </div>
+
+                <div class="color_chooser">
+                    <div>
+                          <div class="dot"></div>
+                          <span>Current color</span>  
+                    </div>
+                    <div>
+                            <div class="dot"></div>
+                            <span>Prev color</span>  
+                    </div>
+                    <div>
+                            <div class="dot"></div>
+                            <span>Red</span>  
+                    </div>
+                    <div>
+                            <div class="dot"></div>
+                            <span>Blue</span>  
+                    </div>
+                </div>
+            </div>
+            <div>
+                    <canvas id="canvasID" width="512" height="512">
+
+                    </canvas>    
+            </div>
+           
+            <div class="image_chooser">
+                <div class="color">
+                    <label class="container">4x4
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">32x32
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">265x265
+                            <input type="radio" name="radio" onclick="drawIcon()">
+                            <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    <script src="script/draw.js"></script>
+</html>

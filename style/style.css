@@ -1,0 +1,39 @@
+body {
+   font-size: 14px;
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .image_chooser {
+      display: grid;
+  }
+
+  .color {
+      display: flex;
+      flex-flow: column;
+  }
+
+  canvas {
+      background-color: grey;
+  }
+
+  
