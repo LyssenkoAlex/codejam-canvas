@@ -148,3 +148,9 @@ main {
       border-radius: 50%;
       background: white;
   }
+
+  .border {
+    width: 90%;
+    border-bottom: 1px solid grey;
+    
+  }
